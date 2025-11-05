@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diana Espelimburgo - Virtual Assistant Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #F5F5DC 0%, #D2B48C 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #FAF0E6 0%, #DEB887 100%);
+            color: #5D4E37;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 600;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        header img {
+            border-radius: 50%;
+            margin-top: 20px;
+            border: 4px solid #D2B48C;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        section {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #8B7355;
+            border-bottom: 2px solid #D2B48C;
+            padding-bottom: 10px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .skills, .experience, .accomplishments, .sample-works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .skill-item, .exp-item, .acc-item, .work-item {
+            padding: 20px;
+            border: 1px solid #E6E6E6;
+            border-radius: 8px;
+            background: #FAF9F6;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+        }
+        .skill-item:hover, .exp-item:hover, .acc-item:hover, .work-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .skill-item i {
+            font-size: 2.5em;
+            color: #8B7355;
+            margin-bottom: 10px;
+        }
+        .work-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .exp-item h3, .acc-item h3, .work-item h3 {
+            color: #8B7355;
+            margin-bottom: 8px;
+        }
+        footer {
+            background: #5D4E37;
+            color: #FAF9F6;
+            text-align: center;
+            padding: 25px;
+        }
+        footer a {
+            color: #D2B48C;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #DEB887;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #8B7355;
+            color: #FAF9F6;
+            padding: 12px 25px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #A0522D;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2em; }
+            .skills, .experience, .accomplishments, .sample-works { grid-template-columns: 1fr; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diana Espelimburgo</h1>
+        <p>“Seeking a dynamic role for career growth, contributing skills while learning in a supportive environment.”</p>
+        <img src="https://via.placeholder.com/150" alt="Diana Espelimburgo">
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Dedicated professional in Business Administration and Marketing. Experienced in customer service, admin, and system analysis. Excels in communication, organization, and tools like Microsoft Office. Ready to provide efficient virtual assistance for streamlined operations.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-item">
+                <i class="fas fa-adjust"></i>
+                <h3>Adaptability</h3>
+                <p>Quick learner in dynamic settings.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-comments"></i>
+                <h3>Communication</h3>
+                <p>Strong English skills for effective interactions.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-laptop"></i>
+                <h3>Technical Proficiency</h3>
+                <p>Expert in Microsoft Office and ERP systems.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-users"></i>
+                <h3>Leadership</h3>
+                <p>Experienced in hosting and coordinating teams.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sample-works">
+        <h2>Sample Works</h2>
+        <div class="sample-works">
+            <div class="work-item">
+                <img src="https://via.placeholder.com/400x300/D2B48C/FFFFFF?text=Financial+Report" alt="Financial Report">
+                <h3>Financial Report</h3>
+                <p>Excel template for expense tracking and payroll analysis.</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/400x300/DEB887/FFFFFF?text=Calendar+Schedule" alt="Calendar Schedule">
+                <h3>Calendar Schedule</h3>
+                <p>Outlook template for meeting coordination.</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/400x300/FAF0E6/FFFFFF?text=Marketing+Presentation" alt="Marketing Presentation">
+                <h3>Marketing Presentation</h3>
+                <p>PowerPoint on strategies and visuals.</p>
+            </div>
+            <div class="work-item">
+                <img src="https://via.placeholder.com/400x300/F5F5DC/FFFFFF?text=Email+Template" alt="Email Template">
+                <h3>Email Template</h3>
+                <p>Professional template for client communications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="exp-item">
+                <h3>Customer Service Representative – Turo Account, Lizardbear Tasking US Inc.</h3>
+                <p>June 2015 – Present<br>
+                Provide support via phone, email, and chat. Resolve inquiries, escalate issues, and maintain KPIs. Collaborate on training and processes.</p>
+            </div>
+            <div class="exp-item">
+                <h3>Assistant System Analyst (Accounting Clerk), Africa Atlantic International Company Limited</h3>
+                <p>February 2024 – February 2025<br>
+                Manage accounts payable, payroll, and receivables. Handle ERP data entry, sales tracking, and petty cash.</p>
+            </div>
+            <div class="exp-item">
+                <h3>HR & Admin Personnel, Vela Corporation (Operated by FinPh Trading)</h3>
+                <p>February 2023 – November 2023<br>
+                Administer payroll, records, and inventory. Prepare reports, presentations, and schedules.</p>
+            </div>
+            <div class="exp-item">
+                <h3>Faculty Student Assistant, Polytechnic University of the Philippines</h3>
+                <p>2019 - 2022<br>
+                Assist with advising, records, and clerical tasks. Liaise between students and faculty.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Business Administration - Major in Marketing Management</strong><br>
+        Polytechnic University of the Philippines | 2018 - 2022</p>
+        <p><strong>Accountancy and Business Management</strong><br>
+        Atimonan National Comprehensive High School | 2012 - 2017</p>
+    </section>
+
+    <section id="accomplishments">
+        <h2>Accomplishments</h2>
+        <div class="accomplishments">
+            <div class="acc-item">
+                <h3>Civil Service Eligibility</h3>
+                <p>Honor Graduate for civil service roles.</p>
+            </div>
+            <div class="acc-item">
+                <h3>Cum Laude Graduate</h3>
+                <p>Polytechnic University of the Philippines.</p>
+            </div>
+            <div class="acc-item">
+                <h3>CME Awardee (2021)</h3>
+                <p>Outstanding Marketing Student Leader.</p>
+            </div>
+            <div class="acc-item">
+                <h3>Best Research Presenter (2021)</h3>
+                <p>In-House Colloquium, Lopez, Quezon.</p>
+            </div>
+            <div class="acc-item">
+                <h3>Leadership Roles</h3>
+                <p>JME Auditor (2019–2020) and President (2020–2021).</p>
+            </div>
+            <div class="acc-item">
+                <h3>NC III in Bookkeeping (2017)</h3>
+                <p>Certified bookkeeping proficiency.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Ready to collaborate? Let's connect.</p>
+        <a href="mailto:dianaespelimburgo24@gmail.com" class="cta-button">Get In Touch</a>
+        <p>Email: <a href="mailto:dianaespelimburgo24@gmail.com">dianaespelimburgo24@gmail.com</a></p>
+        <p>Phone: +639638539938</p>
+        <p>Resume: <a href="path/to/your/resume.pdf" download>Download Resume</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Diana Espelimburgo. Professional Virtual Assistance.</p>
+        <p><a href="#about">Back to Top</a></p>
+    </footer>
+</body>
+</html>
